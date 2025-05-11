@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  font-size: 18px; /* Базовый размер */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px; /* Уменьшаем размер шрифта на маленьких экранах */
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px; /* Увеличиваем на больших экранах */
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: floralwhite;
+  font-size: 1.4rem; /* Используем rem, чтобы подстраиваться под html */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  font-size: 1.0rem; /* Чуть меньше */
+}
+
+#root {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
